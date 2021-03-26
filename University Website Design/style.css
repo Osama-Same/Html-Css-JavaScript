@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("file:///E:/JCA/JavaScript/%D8%B4%D8%B1%D8%AD/Html/eduford_img/banner.png");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: orangered;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover:after {
+  width: 100%;
+}
