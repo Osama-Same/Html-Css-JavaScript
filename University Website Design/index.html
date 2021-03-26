@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +16,8 @@
                 <img
                     src="https://lh3.googleusercontent.com/oQlotBb9wNKPcdXUDd9rOv_dIuXf977f504NaXYOqFBNLvcItNIw4eS1d5N-5IMnwKqObg=s170">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
+                <i class="fas fa-times" onclick="hideMeun()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -26,6 +26,7 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars " onclick="showMeun()"></i>
         </nav>
         <div class="text-box">
             <h1>Worlds biggest University</h1>
@@ -33,6 +34,15 @@
             <a href="" class="hero-btn">Visit Us to Know More</a>
         </div>
     </section>
+    <script>
+        var navlinks =document.getElementById("nav-links")
+        function showMeun(){
+            navlinks.style.right = "0";
+        }
+        function hideMeun(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
