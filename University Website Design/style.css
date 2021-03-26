@@ -5,7 +5,7 @@
 .header {
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url("file:///E:/JCA/JavaScript/%D8%B4%D8%B1%D8%AD/Html/eduford_img/banner.png");
+    url("https://odinland.vn/wp-content/uploads/2019/01/dinh-cu-tai-ireland-scaled.jpg");
   min-height: 100vh;
   background-position: center;
   background-size: cover;
@@ -44,4 +44,56 @@ nav {
 }
 .nav-links ul li:hover:after {
   width: 100%;
+}
+.text-box{
+  text-align: center ;
+  color:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.text-box h1{
+  font-size: 50px;
+}
+.text-box p{
+  margin: 10px 0 40px ;
+  font-size: 14px;
+  color: white;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #222;
+  font-size: 13px;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+}
+.hero-btn:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+@media(max-width:700px){
+  .text-box h1{
+    font-size: 20px;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position:absolute;
+    background: black;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
 }
